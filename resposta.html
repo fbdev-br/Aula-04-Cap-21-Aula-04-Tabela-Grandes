@@ -7,31 +7,36 @@
     <title>Tabelas Grandes</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Times New Roman", serif;
         }
 
         table{
-            width: 500px;
+            width: 1000px;
             border-collapse: collapse ;
-            position: relative;
+            font-size: 14px;
         }
 
         caption {
-            font-size: 15px;
+            background-color: #ddd;
+            font-size: 22px;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgray;
 
         }
 
         tfoot{
-            background-color: rgb(122, 110, 101);
+            background-color: #aaa;
         }
 
         td, th{
             border: 1px solid black;
-            padding: 10px; 
+            padding: 6px 8px; 
+            text-align: left;
         }
+
+        thead th {
+            background-color: #f2f2f2;
+        }   
 
         .direita{
             text-align: right;
@@ -45,6 +50,18 @@
             text-align: center;
         }
 
+        .col1{
+            width: 200px;
+        }
+
+        .col2{
+            width: 75px;
+        }
+
+        .col3{
+            width: 250px;
+        }
+
     </style>
 </head>
 <body>
@@ -54,107 +71,106 @@
         </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
-                <th>Comando HTML Utilizado</th>
+                <th class="esquerda col1">Estado</th>
+                <th class="esquerda col2">População</th>
+                <th class="esquerda col3">Comando HTML Utilizado</th>
             </tr>
         </thead>
         <tbody>
-            
             <tr>
-                <td>Acre</td>
-                <td><mark>830.018</mark></td>
+                <td><b>Acre</b></td>
+                <td class="direita"><mark>830.018</mark></td>
                 <td><b>'Negrito'</b> e <mark>'Destacado'</mark></td>
             </tr>
             <tr>
                 <td><em>Alagoas</em></td>
-                <td>3.365.351</td>
+                <td class="direita">3.365.351</td>
                 <td><em>'Itálico'</em></td>
             </tr>
             <tr>
                 <td><u>Amapá</u></td>
-                <td>877.613</td>
+                <td class="direita">877.613</td>
                 <td><u>'Texto sublinhado'</u></td>
             </tr>
             <tr>
                 <td><del>Amazonas</del></td>
-                <td><u>4.269.995</u></td>
+                <td class="direita"><u>4.269.995</u></td>
                 <td><del>'Texto riscado'</del> e <u>'Texto sublinhado'</u></td>
             </tr>
             <tr>
                 <td><sup>Bahia</sup></td>
-                <td>14.141.626</td>
+                <td class="direita">14.141.626</td>
                 <td><sup>'Texto sobrescrito'</sup></td>
             </tr>
             <tr>
                 <td><abbr title="Ceará">CE</abbr></td>
-                <td>9.240.580</td>
+                <td class="direita">9.240.580</td>
                 <td>'Abreviação'</td>
             </tr>
             <tr>
                 <td><b>Distrito Federal</b></td>
-                <td>3.098.883</td>
+                <td class="direita" >3.098.883</td>
                 <td><b>'Texto em negrito'</b></td>
             </tr>
             <tr>
                 <td><q>Espírito Santo</q></td>
-                <td>4.108.508</td>
+                <td class="direita">4.108.508</td>
                 <td>'<q>Citação curta</q>'</td>
             </tr>
             <tr>
                 <td><em>Goiás</em></td>
-                <td>7.206.589</td>
+                <td class="direita">7.206.589</td>
                 <td><em>'Citação de fonte'<em></td>
             </tr>
             <tr>
                 <td><code>Maranhão</code></td>
-                <td>6.775.805</td>
+                <td class="direita">6.775.805</td>
                 <td><code>'Texto monoespaçado'</code></td>
             </tr>
             <tr>
                 <td><pre>Mato Grosso</pre></td>
-                <td>3.658.813</td>
+                <td class="direita" >3.658.813</td>
                 <td>'<pre>Texto pré-formatado</pre>'</td>
             </tr>
             <tr>
                 <td><small>Paraíba</small></td>
-                <td>4.059.905</td>
+                <td class="direita">4.059.905</td>
                 <td><small>'Texto pequeno'</small></td>
             </tr>
             <tr>
                 <td><sub>Piauí</sub></td>
-                <td>3.281.480</td>
+                <td class="direita">3.281.480</td>
                 <td>'<sub>Texto subscrito</sub>'</td>
             </tr>
             <tr>
                 <td><blockquote>Rio de Janeiro</blockquote></td>
-                <td>16.054.524</td>
+                <td class="direita">16.054.524</td>
                 <td>'<blockquote>Citação em bloco</blockquote>'</td>
             </tr>
             <tr>
                 <td><b>Rio Grande do Sul<b></td>
-                <td>10.882.965</td>
+                <td class="direita">10.882.965</td>
                 <td>'<b>Negrito<b>'</td>
             </tr>
             <tr>
                 <td><em>Rondônia</em></td>
-                <td>1.616.379</td>
+                <td class="direita">1.616.379</td>
                 <td><em>'Itálico'</em></td>
             </tr>
             <tr>
                 <td><mark>Roraima</mark></td>
-                <td>636.707</td>
+                <td class="direita">636.707</td>
                 <td>'<mark>Texto destacado</mark>'</td>
             </tr>
             <tr>
                 <td><abbr title="Tocantins">TO</abbr></td>
-                <td>1.607.363</td>
+                <td class="direita">1.607.363</td>
                 <td>'Abreviação'</td>
             </tr>
         </tbody>
         <tfoot>
-            <th>Total da população estimada</th>
-            <th>Soma Total</th>
+            <th>Total da população estimada:</th>
+            <th class="direita">Soma Total</th>
             <th>Realizar a soma das colunas</th>
         </tfoot>
     </table>
