@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas Grandes</title>
     <style>
-        body{
+        body {
             font-family: "Times New Roman", serif;
         }
 
-        table{
+        table {
             width: 1000px;
-            border-collapse: collapse ;
+            border-collapse: collapse;
             font-size: 14px;
         }
 
@@ -24,46 +25,47 @@
 
         }
 
-        tfoot{
+        tfoot {
             background-color: #aaa;
         }
 
-        td, th{
+        td,
+        th {
             border: 1px solid black;
-            padding: 6px 8px; 
+            padding: 6px 8px;
             text-align: left;
         }
 
         thead th {
             background-color: #f2f2f2;
-        }   
+        }
 
-        .direita{
+        .direita {
             text-align: right;
         }
 
-        .esquerda{
+        .esquerda {
             text-align: left;
         }
 
-        .centro{
+        .centro {
             text-align: center;
         }
 
-        .col1{
-            width: 200px;
+        .col1 {
+            width: 215px;
         }
 
-        .col2{
-            width: 75px;
+        .col2 {
+            width: 70px;
         }
 
-        .col3{
-            width: 250px;
+        .col3 {
+            width: 215px;
         }
-
     </style>
 </head>
+
 <body>
     <table>
         <caption>
@@ -78,9 +80,9 @@
         </thead>
         <tbody>
             <tr>
-                <td><b>Acre</b></td>
+                <td><strong>Acre</strong></td>
                 <td class="direita"><mark>830.018</mark></td>
-                <td><b>'Negrito'</b> e <mark>'Destacado'</mark></td>
+                <td><strong>'Negrito'</strong> e <mark>'Destacado'</mark></td>
             </tr>
             <tr>
                 <td><em>Alagoas</em></td>
@@ -108,9 +110,9 @@
                 <td>'Abreviação'</td>
             </tr>
             <tr>
-                <td><b>Distrito Federal</b></td>
-                <td class="direita" >3.098.883</td>
-                <td><b>'Texto em negrito'</b></td>
+                <td><strong>Distrito Federal</strong></td>
+                <td class="direita">3.098.883</td>
+                <td><strong>'Texto em negrito'</strong></td>
             </tr>
             <tr>
                 <td><q>Espírito Santo</q></td>
@@ -128,9 +130,13 @@
                 <td><code>'Texto monoespaçado'</code></td>
             </tr>
             <tr>
-                <td><pre>Mato Grosso</pre></td>
-                <td class="direita" >3.658.813</td>
-                <td>'<pre>Texto pré-formatado</pre>'</td>
+                <td>
+                    <pre>Mato Grosso</pre>
+                </td>
+                <td class="direita">3.658.813</td>
+                <td>'
+                    <pre>Texto pré-formatado</pre>'
+                </td>
             </tr>
             <tr>
                 <td><small>Paraíba</small></td>
@@ -143,14 +149,16 @@
                 <td>'<sub>Texto subscrito</sub>'</td>
             </tr>
             <tr>
-                <td><blockquote>Rio de Janeiro</blockquote></td>
+                <td>
+                    <blockquote>Rio de Janeiro</blockquote>
+                </td>
                 <td class="direita">16.054.524</td>
                 <td>'<blockquote>Citação em bloco</blockquote>'</td>
             </tr>
             <tr>
-                <td><b>Rio Grande do Sul<b></td>
+                <td><strong>Rio Grande do Sul<strong></td>
                 <td class="direita">10.882.965</td>
-                <td>'<b>Negrito<b>'</td>
+                <td>'<strong>Negrito<strong>'</td>
             </tr>
             <tr>
                 <td><em>Rondônia</em></td>
@@ -175,4 +183,5 @@
         </tfoot>
     </table>
 </body>
+
 </html>
